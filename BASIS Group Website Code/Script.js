@@ -12,8 +12,8 @@ if (personName == "jake") {
     document.getElementById("Name").innerHTML = "Jake";
     document.getElementById("img").innerHTML = "<img alt='image of Jake' src='Jake.jpg'/>";
     document.getElementById("bio").innerHTML = "An organized professional with a strong background in web-based development. Effective at providing insight and optional improvements to existing systems for effective service delivery. I diligently provide the best services possible to create a fast and responsive experience. ";
-    document.getElementById("service").innerHTML = "<ul><li>Web Development</li><li>Front-End Development</li><li>Back-End Development</li><li>Security</li><li>Network Security</li><li>Database Creation/Management</li><li>Software Developemnt</li></ul>";
-    document.getElementById("projects").innerHTML = "<div><a href='2020-CIS255-Final-master/2020-CIS255-Final-master/index.html'><img alt='image of Wayword' class='projectpic' src='Wayword.PNG'/><h3 class='projectname'>Gluten Freedom V2</h3></a></div><div><a href='HomePage.html'><img alt='image of axolotl' class='projectpic' src='axolotl.PNG'/><h3 class='projectname'>Gluten Freedom V2</h3></a></div>";
+    document.getElementById("service").innerHTML = "<ul><li>Web Development</li><li>Front-End Development</li><li>Back-End Development</li><li>Security</li><li>Network Security</li><li>Database Creation/Management</li><li>Software Development</li></ul>";
+    document.getElementById("projects").innerHTML = "<div><a href='2020-CIS255-Final-master/2020-CIS255-Final-master/index.html'><img alt='image of Wayword' class='projectpic' src='Wayword.PNG'/><h3 class='projectname'>Wayword Resturant</h3></a></div><div><a href='HomePage.html'><img alt='image of axolotl' class='projectpic' src='axolotl.PNG'/><h3 class='projectname'>Axolotl Portfolio Page</h3></a></div>";
 }
 
 //Attribute settings for True's Profile
