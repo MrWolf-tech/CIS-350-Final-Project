@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+    <head>
+        <title></title>
+        <link rel="stylesheet" href="css/mainstyle.css">
+        <script src="js/login.js"></script>
+        <meta charset='UTF-8'>
+    </head>
+    <body>
+        <div class="grid-container">
+            <div class="item1">Employee Login</div>
+            <div class="item2"></div>
+            <div class="item3">
+                <div class="flex-container">
+                    <div onclick="location.href ='index.html';"id="Home">Home</div>
+                    <div onclick="location.href ='About.html';"id="About">About</div>
+                    <div onclick="location.href ='Menu.html';"id="Menu">Menu</div>
+                    <div onclick="location.href ='Contact.html';"id="Contact">Contact</div>
+                    <div onclick="location.href ='Employee_Login.html';"id="Employee">Employee</div>
+                </div>
+            </div>
+            <div class="item4">
+                <p>If you are having difficulty logging in<br>please contact your local manager to help you resolve this problem.</p>
+            </div>
+            <div class="item5">Wayword Tavern • waywordemail@email.com • 801 NE 65th St • Seattle WA 98115-1699</div>
+            <div class="item6">
+                <form id="passForm" action='Employee_Order_Status.html' method='GET' onsubmit="{event.preventDefault(), validateForm()}">
+                    <label for="username">Username: </label>
+                    <input type="text" id="username" placeholder="Enter Username" name="username" required>
+                    <br>
+                    <label for="password">Password: </label>
+                    <input type="password" id="password" placeholder="Enter Password" name="password" required>
+                    <br>
+                    <button onclick="checkPass()">Submit</button>
+                    <button onclick="clrbtn()">Clear</button>
+                </form>
+            </div>
+        </div>
+        <script src="js/mainJS.js"></script>
+    </body>
+</html>

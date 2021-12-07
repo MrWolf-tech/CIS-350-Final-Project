@@ -1,0 +1,341 @@
+/* Webpage Size Scaler \\DO NOT EDIT// */
+html{
+    scroll-behavior: smooth;
+    width: 100%;
+    height: 100%
+}
+body{
+   width: 100%;
+   height: 100%;
+   background-color: #bbb;
+   padding:0;
+   margin: 0;
+
+   /*Background subtle animation for added effect*/
+    background: linear-gradient(-45deg, #bbb, #6E6D6D, #bbb, #111);
+    background-size: 600% 600%;
+    animation: gradient 15s ease infinite;
+}
+@keyframes gradient {
+    0%{background-position: 0% 50%;}
+    50%{background-position: 100% 50%;}
+    100%{background-position: 0% 50%;}
+}
+.main{
+    max-width:100em;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    opacity: 0.9;
+}
+
+
+/*Navbar Styling Desktop*/
+div.Navbar{
+    position: sticky;
+    top: 0;
+    z-index: 99;
+}
+#nav-container{
+    list-style-type: none;
+    width:100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    border-top: 1px solid #bbb;
+    border-bottom: 1px solid #bbb;
+}
+.nav-item{
+    float: left;
+    border-left: 1px solid #bbb;
+    width:100px;
+    height: 3em;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.nav-item:first-child{
+    Width: 120px;
+    border-left: none;
+}
+.nav-item a{
+    display:block;
+    color: white;
+    text-align: center;
+    padding: 1em 1em;
+    text-decoration: none;
+}
+.nav-item:hover{
+    width: 200px;
+    height: 3em;
+    box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.2), 0px 4px 4px 0px rgba(0,0,0,0.2);
+    background-color: #111;
+}
+#contact{
+    background-color: dimgray;
+}
+@media only screen and (max-width: 1080px){
+    #nav-container{
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    .nav-item{
+        width: auto;
+        flex-grow: 1;
+        font-size: 0.75em;
+    }
+    .nav-item:first-child{
+        width:auto;
+    }
+    .nav-item:hover{
+        width: auto;
+    }
+}
+/* Old Projects Styling
+.projects{
+    display: block;
+    height: auto;
+    width: 100%;
+    background-color: #333;
+}
+.project-container{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: auto;
+    margin-left: auto;
+}
+.project-container > div{
+    min-width: 20em;
+    flex-grow: 1;
+    height: auto;
+    height: 30em;
+    background-color: #333;
+    border: 1px solid #333;
+    margin-left: auto;
+    margin-top: 1px;
+    margin-right: auto;
+    transition: 0.5s;
+}
+.projectpic{
+    filter: blur(3px);
+    transition: 1s;
+    max-height: 80%;
+}
+.project-container > div:hover .projectpic{
+    filter: blur(0px);
+}
+.project-container > div:hover{
+    box-shadow: 0px 3px 3px 0px dimgrey, 0px 3px 3px 0px dimgrey;
+    min-width: 40em;
+}
+.projectname{
+    display: block;
+    width: 100%;
+    height: 15%;
+    background-color: #bbb;
+    text-align: center;
+    font-size: 2em;
+    color: black;
+    padding: 0em;
+    margin: 0;
+}
+*/
+/*Personal Project Styling*/
+.projects{
+    display: block;
+    height: auto;
+    width: 100%;
+    background-color: #333;
+}
+#projectHeading{
+    text-align: center;
+    font-size: 3em;
+    color: white;
+    padding-top: 0.5em;
+    
+}
+/*Projects Styling*/
+.project-container{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 100%;
+}
+.project-container > div{
+    width: 45%;
+    max-width: 100%;
+    height: min-content;
+    flex-grow: 1;
+    background-color: #333;
+    border: 1px solid #333;
+    margin-left: auto;
+    margin-top: 1px;
+    margin-right: auto;
+    transition: 0.5s;
+    min-width: 40em;
+}
+@media only screen and (max-width:900px){
+    
+    .project-container > div{
+        min-width: 100%;
+        min-height: 0em;
+    }
+}
+.projectpic{
+    filter: blur(3px);
+    transition: 1s;
+    max-width: 100%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.project-container > div:hover .projectpic{
+    filter: blur(0px);
+}
+.project-container > div:hover{
+    box-shadow: 0px 3px 3px 0px dimgrey, 0px 3px 3px 0px dimgrey;
+    
+}
+.projectname{
+    display: block;
+    width: 100%;
+    max-height: 15%;
+    height: auto;
+    min-height: 2em;
+    background-color: #bbb;
+    text-align: center;
+    font-size: 2em;
+    color: black;
+    padding: 0em;
+    margin: 0;
+}
+
+/*Service Styling*/
+.service{
+    display: block;
+    width: 100%;
+    margin-top: 1em;
+    background-color: #333;
+    color: white;
+}
+#serviceHeading{
+    text-align: center;
+    font-size: 3em;
+    color: white;
+    padding-top: 0.5em;
+}
+#service{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 1.5em;
+}
+#service ul{
+    columns: 2;
+    word-wrap: normal;
+    max-height: 100%;
+}
+#service li{
+    font-size: 2em;
+    list-style: circle;
+    line-height: 2em;
+}
+
+
+
+/*About Me Styling*/
+.about{
+    display: block;
+    min-height: 30em;
+    width: 100%;
+    background-color: #333;
+    color: white;
+}
+#Name{
+    font-size: 3em;
+    text-align: center;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    padding-top: 0.5em;
+}
+#bio{
+    font-size: 1.5em;
+    padding: 2.5%;
+    width: 95%;
+    padding-top: 0em;
+    line-height: 1.5;
+}
+#img img{
+    height: 100%;
+    max-height: 28em;
+    padding: 1em;
+}
+#img{
+    height: 100%;
+    float: right;
+    
+    
+}
+
+
+
+
+
+
+
+
+
+
+/*Contact Me Styling*/
+.contactme{
+    background-color: #333;
+    height: 30em;
+}
+h3{
+    color: #bbb;
+    font-size: 2em;
+    border-bottom: 1px solid #bbb;
+    padding-top: 1rem;
+    padding-left: 1rem;
+}
+.contact-container{
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    color: white;
+}
+input{
+    background-color: transparent;
+    color: white;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    font-size: 1.5em;
+    padding-top: 1rem;
+    width: 12rem;
+    margin-left: auto;
+    margin-right: auto;
+    transition: ease-in-out 0.5s;
+    text-align: center;
+}
+input:hover{
+    width:14rem;
+    border-radius: 5px;
+}
+input:focus{
+    width: 20rem;
+    border-radius: 5px;
+}
+
+
+
+
+
+
+
+
+

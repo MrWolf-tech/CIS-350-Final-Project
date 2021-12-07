@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<head>
+    <title id="title">Axolotl</title>
+    <link rel="stylesheet" href="profilepage.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <!--These lines are placeholders to test dynamic results-->
+<!--   ID="Name" in the about section is Dynamic    -->
+<!--   ID="Bio" in the about section is Dynamic     -->
+<div class="main">
+<div class="Navbar">
+    <ul id="nav-container">
+        <li class="nav-item" id="contact" onclick="document.getElementById('contactus').scrollIntoView();"><a>Contact Us</a></li>
+        <li class="nav-item" style="float:right"><a href="homepage.html">Home</a></li>
+        <li class="nav-item" style="float:right" onclick="document.getElementById('service').scrollIntoView();"><a>Services</a></li>
+        <li class="nav-item" style="float:right" onclick="document.getElementById('projects').scrollIntoView();"><a>Projects</a></li>
+        <li class="nav-item" style="float:right" onclick="document.getElementById('about').scrollIntoView();"><a>About Us</a></li>
+    </ul>
+    
+</div>
+
+<div id="about" class="about">
+    <div id="img"></div>
+    <div>
+        <h2 id="Name">Name</h2>
+        <p id="bio">Blah Blah</p>
+    </div>
+</div>
+<div class="service">
+    <h2 id="serviceHeading">Services</h2>
+    <div id="service"></div>
+</div>
+<div class="projects">
+    <h2 id="projectHeading">Personal Projects</h2>
+    <div class="project-container" id="projects"></div>
+</div>
+
+
+
+
+
+
+<div class="contactme">
+    <h3>Contact Us (WIP)</h3>
+    <div class="contact-container">
+        <input id="fname" type="text" name="fname" placeholder="First Name"><br>
+        <input id="lname" type="text" name="lname" placeholder="Last Name"><br>
+        <input id="phone" type="number" maxlength="10" minlength="10" name="phone" placeholder="Phone Number"><br>
+        <input id="email" type="email" name="email" placeholder="Email"><br>
+    </div>
+</div>
+</div>
+<!--THE SCRIPT REMAINS AT THE BOTTOM OTHERWISE THE PAGE BREAKS-->
+<script src="Script.js"></script>
+</body>
+</html>

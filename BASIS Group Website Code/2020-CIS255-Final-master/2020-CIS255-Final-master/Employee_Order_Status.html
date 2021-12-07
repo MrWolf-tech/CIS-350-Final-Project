@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+    <head>
+        <title></title>
+        <link rel="stylesheet" href="css/mainstyle.css">
+        <link rel="stylesheet" href="css/local.css">
+        <script src="js/employeeOrders.js" defer></script>
+        <script src="js/JQuery.js" ></script>
+        <meta charset='UTF-8'>
+    </head>
+    <body>
+        <div class="grid-container">
+            <div class="item1">Wayword Employee Central</div>
+            <div class="item2">
+                    <!--Order List Goes Here in orderlist-->
+                    <h3>Order Status</h3>
+                    <div class="orderlist" id='orderListy'>
+                    </div>
+                    
+                </div>
+            <div class="item3">
+                <div class="flex-container">
+                    <div onclick="location.href ='index.html';"id="Home">Home</div>
+                    <div onclick="location.href ='About.html';"id="About">About</div>
+                    <div onclick="location.href ='Menu.html';"id="Menu">Menu</div>
+                    <div onclick="location.href ='Contact.html';"id="Contact">Contact</div>
+                    <div onclick="location.href ='Employee_Login.html';"id="Employee">Employee</div>
+                </div>
+            </div>
+            <div class="item4">
+                <div id='welcomeUser'></div>
+                <div id='profilePic'></div>
+                <div id='employeeItems'>
+                    <div id="account" style='height: 3vh; width: 4vw; font-size: 1vw; margin: 1vw;'>Account</div>
+                    <div onclick="logOut();"id="LogOut" style='height: 3vh; width: 4vw; font-size: 1vw; margin: 1vw;'>Log Out</div>
+                </div>
+            </div>
+            <div class="item5">Wayword Tavern • waywordemail@email.com • 801 NE 65th St • Seattle WA 98115-1699</div>
+            <div class="item6">
+                <h3>Contact Status</h3>
+                <div class="orderlist" id='queryListy'>
+                </div>
+            </div>
+        </div>
+        <script src="js/mainJS.js"></script>
+    </body>
+</html>

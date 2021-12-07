@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+    <head>
+        <title></title>
+        <meta charset='UTF-8'>
+        <link rel="stylesheet" href="css/mainstyle.css">
+        <link rel="stylesheet" href="css/local.css">
+        <script src="js/local.js" defer></script>
+        <script src="js/contact.js" defer></script>
+        <script src="js/JQuery.js"></script>
+    </head>
+    <body>
+        <div class="grid-container">
+            <div class="item1">Contact</div>
+            <div class="item2"></div>
+            <div class="item3">
+                <div class="flex-container">
+                    <div onclick="location.href ='index.html';"id="Home">Home</div>
+                    <div onclick="location.href ='About.html';"id="About">About</div>
+                    <div onclick="location.href ='Menu.html';"id="Menu">Menu</div>
+                    <div onclick="location.href ='Contact.html';"id="Contact">Contact</div>
+                    <div onclick="location.href ='Employee_Login.html';"id="Employee">Employee</div>
+                </div>
+            </div>
+          
+            <div class="item4">
+                <form id="newForm" onsubmit="{event.preventDefault(), validateForm(); contactForm();}">
+                    <h2>Contact Us!</h2>
+                    <div><label for='firstName'>First Name: </label><input type='text' id='firstName' name='firstName' required='required' placeholder='Please Enter Your First Name'></div>
+                    <div><label for='lastName'>Last Name: </label><input type='text' id='lastName' name='lastName' required='required' placeholder='Please Enter Your Last Name'></div>
+                    <div><label for='email'>Email: </label><input type='text' id='email' name='email' required placeholder='Please Enter A Valid Email Address'></div>
+                    <div><label for='phoneNum'>Phone Numer: </label><input type='text' id='phoneNum' name='phoneNum' required placeholder='Please Enter Phone Number (Optional)'></div>
+                    <div><textarea id="comments" name="comments" required style="text-align: left; width: 25vw; height: 20vh; background-color: rgba(0, 0, 0, 0.0); color: white; border: 0px; border-right: 0.1vw solid rgb(43, 101, 189); border-bottom: 0.1vw solid rgb(43, 101, 189); border-radius: 5%;" rows="6" cols="50" maxlength="500" placeholder='Please Enter Your Questions, Comments, And Concerns Here...'></textarea></div>
+                    <div id='btnDiv'><button id='formBtn' for="newForm">Submit Query</button></div>   
+                </form>
+            </div>
+            <div class="item5">Wayword Tavern • waywordemail@email.com • 801 NE 65th St • Seattle WA 98115-1699</div>
+            <div class="item6">  
+                <div id='contact'>
+                    <div>
+                        <h3 class='contactHeader'> • Contact Information • </h3>
+                        <div class='contactItems'>
+                           <span>Email: waywordemail@email.com</span><br />
+                           <span>Phone Number: (123) 456-7890</span> <br />
+                           <span>Work Hours: 8:00 AM - 6:00 PM</span><br />
+                           
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class='contactHeader'> • Location Information • </h3>
+                        <div class='contactItems'>
+                            <div>
+                                <span>Main Address: 801 NE 65th St • Seattle WA 98115-1699</span><br />
+                                <span>Select To Find Our Other Locations!</span><br />
+                                <select id='stateSelect' onchange="findState(this);">
+                                    <option selected>Please Select A Location</option>
+                                    <option>Arizona</option>
+                                    <option>California</option>
+                                    <option>Nevada</option>
+                                    <option>Oklahoma</option>
+                                    <option>Washington</option>
+                                </select>
+                                <div id='cities'>
+
+                                </div>
+                            </div>
+                            <div id='googleMap'>
+                              
+                            </div>
+                          </div>
+                    </div>
+                </div>
+        
+            </div>
+        </div>
+        <script src="js/mainJS.js"></script>
+    </body>
+</html>

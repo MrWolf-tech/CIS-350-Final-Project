@@ -1,0 +1,138 @@
+/*Grid-Format Setup*/
+.item1{ grid-area: header;
+    border: double;
+    border-radius: 5px;}
+.item2{ grid-area: menu;
+    border: double;
+    border-radius: 5px;}
+.item3{ grid-area: main;
+    border: double;
+    border-radius: 5px;}
+.item4{ grid-area: right;
+    border: double;
+    border-radius: 5px;}
+.item5{ grid-area: footer;
+    border: double;
+    border-radius: 5px;}
+.item6{ grid-area: center;
+    border-radius: 5px;}
+
+/*grid-container holds the template for the overall design of the page.*/
+.grid-container{
+display: grid;
+grid-template-areas: 
+'header header header header header header'
+'main main main main main main'
+'menu center center center center right'
+'menu footer footer footer footer right';
+grid-gap: 10px;
+padding: 10px;
+background-color: rgba(0,0,0,0.7);
+/*
+This is the original background Picture
+https://www.flickr.com/photos/137643065@N06/24300002976/in/photolist-D2iShy-rw9PCL
+Original Photographer: www.Pixel.la Free Stock Photostream
+Creative Commons Dedicated ---- Public Domain
+*/
+background-image: url('../images/background2.jpg');
+background-repeat: no-repeat;
+background-size: cover;
+min-width: 90vw;
+min-height: 90vh;
+}
+/*The div elements of the main container styling aspects*/
+.grid-container > div{
+background-color: rgba(0,0,0,0.5);
+color: white;
+text-align: center;
+padding: 20px 0;
+font-size: 1.5vw;
+border-radius: 1em;
+}
+/*This is part of the dynamic menu creation...look into the menuSetup.js for more details*/
+section{
+border: 0px;
+border-bottom: 0.1vw solid rgb(43, 101, 189);
+}
+
+/*This is the Menu Selection*/
+.flex-container{
+display: flex;
+flex: nowrap;
+}
+/*Flex Container is the box that contains all the buttons to easily navigate all the main pages of the website*/
+.flex-container > div{
+background-color: darkgray;
+width: 19%;
+margin: 10px;
+text-align: center;
+line-height: 75px;
+font-size: 1.5vw;
+border-style: ridge;
+border-radius: 5px;
+border-color: lightgray;
+}
+/*independent stylized areas of the website*/
+.item1{
+font-family: cursive;
+}
+.item2 > div{
+background-color: darkgray;
+margin: auto;
+width: 60%;
+border-style: ridge;
+border-radius: 1em;
+border-color: lightgray;
+}
+.item2 > div > p{
+padding: auto;
+margin: auto;
+font-size: 1.25vw;
+}
+.item4 > div{
+background-color: darkgray;
+margin: auto;
+border-style: ridge;
+border-radius: 1em;
+border-color: lightgray; 
+}
+.item4 > p{
+font-size: 1vw;
+}
+/*Button Hover Style*/
+#Employee:hover{
+background-image: linear-gradient(to bottom right, rgba(0,0,0,0.7), darkgray);
+border-color: rgba(0,0,0,0.5);
+}
+#Home:hover{
+background-image: linear-gradient(to bottom right, rgba(0,0,0,0.7), darkgray);
+border-color: rgba(0,0,0,0.5);
+}
+#About:hover{
+background-image: linear-gradient(to bottom right, rgba(0,0,0,0.7), darkgray);
+border-color: rgba(0,0,0,0.5);
+}
+#Menu:hover{
+background-image: linear-gradient(to bottom right, rgba(0,0,0,0.7), darkgray);
+border-color: rgba(0,0,0,0.5);
+}
+#Contact:hover{
+background-image: linear-gradient(to bottom right, rgba(0,0,0,0.7), darkgray);
+border-color: rgba(0,0,0,0.5);
+}
+#LogOut:hover{
+background-image: linear-gradient(to bottom right, rgba(0,0,0,0.7), darkgray);
+border-color: rgba(0,0,0,0.5);
+}
+
+
+
+/*Map on the contact side*/
+
+iframe#location{
+min-height: 50vh;
+min-width: 40vh;
+height: 50vh;
+width: 40vh;
+}
+

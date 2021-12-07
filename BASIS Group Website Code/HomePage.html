@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<head>
+    <title>Axolotl</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="homepagestyle.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="Script.js"></script>
+    <!--The scripts dont mean much here. But are here as a just in case.-->
+</head>
+<body>
+<div class=main>
+<div class="Banner" id="home">
+    <img src="logo.png" alt="Welcome to Axolotl">
+</div>
+<!--Navbar Section-->
+<div class="Navbar">
+    <ul id="nav-container">
+        <li class="nav-item" id="contact" onclick="document.getElementById('contactus').scrollIntoView();"><a>Contact Us</a></li>
+        <li class="nav-item" style="float:right" onclick="document.getElementById('home').scrollIntoView();"><a>Home</a></li>
+        <!--<li class="nav-item" style="float:right" onclick="document.getElementById('service').scrollIntoView();"><a>Services</a></li> Removed since there are no longer services on the home page-->
+        <li class="nav-item" style="float:right" onclick="document.getElementById('projects').scrollIntoView();"><a>Projects</a></li>
+        <li class="nav-item" style="float:right" onclick="document.getElementById('about').scrollIntoView();"><a>About Us</a></li>
+    </ul>
+    
+</div>
+<!--About us section-->
+<form id="personForm" method="GET" action="profilepage.html" name="personForm">
+    <div class="about" id="about">
+        <div class="profile-container">
+            <div>
+                <label for="jake">
+                    <img class="profilepic" src="Jake.jpg" alt="Image of Jake Stieber">
+                    <h1>Jake Stieber</h1>
+                    <div class="slogan"></div>
+                    <input id="jake" type="submit" name="personName" value="jake"/>
+                </label>
+            </div>
+            <div>
+                <label for="true">
+                    <img class="profilepic" src="true_2.jpg" alt="Image of True Sparrow">
+                    <h1>True Sparrow</h1>
+                    <div class="slogan"></div>
+                    <input id="true" type="submit" name="personName" value="true" />
+                </label>
+            </div>
+            <div>
+                <label for="shama">
+                    <img class="profilepic" src="shama.jpg" alt="Image of Shama Haji">
+                    <h1>Shama Haji</h1>
+                    <div class="slogan"></div>
+                    <input id="shama" type="submit" name="personName" value="shama" />
+                </label>
+            </div>
+            <div>
+                <label for="javaris">
+                    <img class="profilepic" src="Javaris.jpg" alt="Image of Javaris Taylor">
+                    <h1>Javaris Taylor</h1>
+                    <div class="slogan"></div>
+                    <input id="javaris" type="submit" name="personName" value="javaris" />
+                </label>
+            </div>
+        </div>
+        <div class="aboutus">
+            <h2>We are Team Axolotl</h2>
+            <p>On the never ending journey to attain perfection through innovation.</p>
+        </div>
+    </div>
+</form>
+<!--Projects section-->
+<div class="projects" id="projects">
+    <h2 id="projectHeading">Projects</h2>
+    <div class="project-container">
+        <div>
+            <a href='http://cis2.oc.ctc.edu/class/mw255.spring21/truesparrow/greenteam-home.htm'>
+            <div class="projectpicture"><img class="projectpic" src="project_true-1.jpg" alt="PICTURE"></div>
+            <div class="projectname">Neon Cafe</div>
+        </a>
+        </div>
+        <div>
+            <div class="projectpicture"><img class="projectpic" src="project_true-2.jpg" alt="PICTURE"></div>
+            <div class="projectname">Your Own Adventures</div>
+        </div>
+        <div>
+            <div class="projectpicture"><img class="projectpic" src="GlutenFreedomClip.jpg" alt="PICTURE"></div>
+            <div class="projectname">GlutenFreedom V4</div>
+        </div>
+        <div>
+            <div class="projectpicture"><img class="projectpic" src="project1.jpg" alt="PICTURE"></div>
+            <div class="projectname">Roadways</div>
+        </div>
+    </div>
+</div>
+<!--Contact Information Section-->
+<form>
+<div class="contactus" id="contactus">
+    <h3>Contact Us (WIP)</h3>
+    <div class="contact-container">
+        <input id="fname" type="text" name="fname" placeholder="First Name"><br>
+        <input id="lname" type="text" name="lname" placeholder="Last Name"><br>
+        <input id="phone" type="number" maxlength="10" minlength="10" name="phone" placeholder="Phone Number"><br>
+        <input id="email" type="email" name="email" placeholder="Email"><br>
+    </div>
+
+</div>
+</form>
+
+
+</div>
+</body>
+</html>
